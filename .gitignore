@@ -1,6 +1,0 @@
-# Ignorar archivos del sistema operativo y editores
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.log
