@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Colaborativo - Sitio Web</title>
+  <title>Proyecto Colaborativo - Guía de Guitarra</title>
   <style>
     :root {
       --primary-color: #1e293b;
@@ -11,6 +11,7 @@
       --bg-color: #f8fafc;
       --card-bg: #ffffff;
       --text-color: #334155;
+      --light-blue: #eff6ff;
     }
 
     body {
@@ -51,7 +52,7 @@
       color: #38bdf8;
     }
 
-    container {
+    .container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1.5rem;
@@ -69,16 +70,22 @@
     h2 {
       color: var(--accent-color);
       margin-top: 0;
-      border-bottom: 2px solid #eff6ff;
+      border-bottom: 2px solid var(--light-blue);
       padding-bottom: 0.5rem;
     }
 
-    ul {
-      padding-left: 1.2rem;
+    .benefit-item, .chord-item {
+      margin-bottom: 1.5rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--accent-color);
+      background-color: #f1f5f9;
+      padding: 1rem;
+      border-radius: 0 8px 8px 0;
     }
 
-    li {
-      margin-bottom: 0.5rem;
+    .benefit-item h3, .chord-item h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--primary-color);
     }
 
     footer {
@@ -100,32 +107,61 @@
     </div>
   </header>
 
-  <container>
+  <div class="container">
     <section class="card">
       <h2>Sobre el Proyecto</h2>
-      <p>Estructura mejorada para la gestión y control de versiones del proyecto. Diseñado para trabajar colaborativamente mediante ramas, commits estructurados y Pull Requests.</p>
+      <p>Estructura web mejorada para la gestión y control de versiones del proyecto. Diseñado para trabajar colaborativamente mediante ramas independientes, registro de commits estructurados y solicitudes de integración mediante Pull Requests.</p>
     </section>
 
     <section class="card">
       <h2>Beneficios de Tocar la Guitarra</h2>
-      <ul>
-        <li>Mejora la memoria y la concentración.</li>
-        <li>Reduce el estrés y estimula la creatividad.</li>
-        <li>Desarrolla la coordinación motora fina.</li>
-      </ul>
+      
+      <div class="benefit-item">
+        <h3>1. Estimulación Cognitiva y Mejora de la Memoria</h3>
+        <p>Aprender a tocar la guitarra ejercita ambos hemisferios del cerebro. Requiere memorizar posiciones de dedos, secuencias de acordes y estructuras de canciones, lo que fortalece la neuroplasticidad y aumenta la capacidad de retención y concentración mental.</p>
+      </div>
+
+      <div class="benefit-item">
+        <h3>2. Reducción del Estrés y Salud Emocional</h3>
+        <p>Tocar un instrumento actúa como una vía de escape creativa que reduce los niveles de cortisol (la hormona del estrés). Al concentrarse en la música, la mente se libera de preocupaciones cotidianas, promoviendo la relajación y la liberación de dopamina.</p>
+      </div>
+
+      <div class="benefit-item">
+        <h3>3. Desarrollo de la Coordinación Motora Fina</h3>
+        <p>Exige que ambas manos realicen tareas completamente diferentes pero sincronizadas al milisegundo: mientras una mano realiza los acordes en el mástil, la otra mantiene el ritmo rasgueando o punteando. Esto fortalece la agilidad mental y física.</p>
+      </div>
+
+      <div class="benefit-item">
+        <h3>4. Fomento de la Disciplina y la Paciencia</h3>
+        <p>Dominar cambios fluidos de acordes exige práctica constante. Este proceso enseña el valor de la perseverancia, ayudando a desarrollar una mentalidad enfocada en alcanzar metas a mediano y largo plazo.</p>
+      </div>
     </section>
 
     <section class="card">
-      <h2>Acordes Básicos</h2>
-      <p>Lista de acordes para empezar:</p>
-      <ul>
-        <li><strong>Do Mayor (C)</strong></li>
-        <li><strong>Sol Mayor (G)</strong></li>
-        <li><strong>Re Mayor (D)</strong></li>
-        <li><strong>Mi Menor (Em)</strong></li>
-      </ul>
+      <h2>Acordes Básicos e Imprescindibles</h2>
+      <p>A continuación se detallan los cuatro acordes primordiales para cualquier principiante. Con esta combinación se pueden interpretar cientos de canciones populares:</p>
+      
+      <div class="chord-item">
+        <h3>Do Mayor (C)</h3>
+        <p>Aporta un sonido brillante y estable. Es indispensable para la música popular y clásica. Requiere la extensión de tres dedos en los tres primeros trastes.</p>
+      </div>
+
+      <div class="chord-item">
+        <h3>Sol Mayor (G)</h3>
+        <p>Uno de los acordes más armónicos y resonantes de la guitarra acústica, utilizado para abrir y cerrar progresiones armónicas de gran dinamismo.</p>
+      </div>
+
+      <div class="chord-item">
+        <h3>Re Mayor (D)</h3>
+        <p>Acorde alegre y enérgico ejecutado sobre las cuatro cuerdas inferiores. Es fundamental para transiciones rápidas en ritmos folclóricos y pop-rock.</p>
+      </div>
+
+      <div class="chord-item">
+        <h3>Mi Menor (Em)</h3>
+        <p>El acorde más fácil de posicionar (solo requiere dos dedos) y uno de los más expresivos, perfecto para transmitir emociones profundas, nostalgia o melancolía.</p>
+      </div>
     </section>
-  </container>
+  </div>
 
   <footer>
     <p>&copy; 2026 - Universidad Indoamérica | Proyecto Colaborativo Git & GitHub</p>
